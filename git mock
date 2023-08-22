@@ -1,0 +1,10 @@
+ans 1 for check git is available or not we use git --version
+ans 2 To initialized new git repository we use "git init" in specific files
+ans 3 we can add email and username with "git config global user.email "xyz@gmail.com"
+ans 3 we can add username with "git config global user.name "xyz"
+ans 4 To add files from working area to staging area we use git add <file name> or if we want to add all file then "git add ."
+ans 5 to remove from staging area we use "git reset head -- <file name>
+ans 6 git commit -m "message"
+git push origin <branch name>
+ans 7 With clone command we can make clone of already existing file in repository to local computer.
+git pull is used to get most recent changes and updates from repository that is done by another developer.
