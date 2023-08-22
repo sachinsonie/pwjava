@@ -1,0 +1,36 @@
+Ans 1 To create object in java we use 'new' keyword and we can make object in class.
+      Class objectName = new className();
+      public class cal{
+      int a=10,b=20; 
+      public static void main(String [] args){
+      cal obj = new cal();
+      int result = obj.a + obj.b;
+      System.out.prinln(result);
+      } 
+}
+
+Ans 2 new keyword is use to create instance of object and it alloted memory to object.
+
+Ans 3 Static variable 
+      Instance variable - outside main method
+      Local variable - Inside main method
+
+Ans 4 Instance variable
+      - Outside of method 
+      - Accessible to all methods 
+      - Destroy when object is destroyed
+      - Access thorugh class
+      - Have default value if not assign
+      - Have access modifier
+
+      Local variable
+      - Inside block and mathod
+      - Destroy when method or block exited
+      - Created when block is started
+      - Not assign with default values sometime
+      - Need initialaized before use.
+      - Do not have access modifier
+
+Ans 5 Instance variable are allot in heap and local variable are stored in stack memory.
+
+Ans 6 Method overloding allow a class to have many same method name but with different parameters. it increase code reusebility and reduce complixity of code.
