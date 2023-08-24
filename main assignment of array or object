@@ -1,0 +1,77 @@
+pw please tell me any complixity decreasing way for each question
+Method overloding program with 3 parametesrs
+public class methodoverloding{
+public int add(int a, int b){
+return a+b;
+}
+public double add(double a, double b){
+return a+b;
+}
+public int add(int a, int b, int c){
+return a+b+c;
+}
+public static void main(String[]args){
+    methodoverloding obj = new methodoverloding();
+System.out.println("total of " + obj.add(3,4));
+System.out.println("total of " + obj.add(3.1,4.1));
+System.out.println("total of " + obj.add(3,4,5));
+}
+}
+
+Ans 2 call method of class in main method
+      public class demo{
+        void classMethod(){
+        System.out.println("this is class method ");
+        }
+        }
+        public class main{
+        public static void main(String [] args){
+        demo obj = new demo();
+        System.out.println(obj.classMethod);
+        }
+        }
+
+Ans 3 public class summ{
+      public static void main(String [] args){
+       int result = 0;
+      int nums[] = {5,5,5,5};
+      for(int a : nums){ //enhance for each loop
+      result = result + a;
+      }
+      System.out.println("total is " + result);
+      }
+      }
+
+Ans 4 public class Demo {
+    public static void main(String[] args) {
+        int nums[] = {5, 8, 6, 9, 3, 2, 8};
+        int index = -1;
+        int key = 6;
+        boolean keyfound = false;
+        
+        for (int a : nums) {
+            ++index;
+            
+            if (a == key) {
+                System.out.println("Index of key " + key + " is: " + index);
+                keyfound = true;
+                break;
+            }
+    }
+    if(!keyfound){
+        System.out.println("key is not found");
+    }
+    }
+}
+
+Ans 5 public class demo {
+      public static void main(String [] args){
+      int nums[] ={1,2,3,4,5,6,7,8,9,28};
+      for(int i = 0; i<nums.length; i++){
+      System.out.print(" " + nums[i]);
+      }
+      }
+      }
+    
+      
+  
