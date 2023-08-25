@@ -1,0 +1,76 @@
+                                                                            STRING IN JAVA
+
+Ans 1 String is a collection of characters. in java string is a object that represent the sequence of characters. and java.lang.string is used to create java string object.
+
+Ans 2 there are two type of java string immutable that is non changeable and second is mutable that is changable,it's write with stringbuffer keyword 
+
+Ans 3 there are two way to write string - string s1 = new string("hello"); // store in outside of string constant pool in heap
+                                          string s1 = "hello";//store in string constant pool in heap
+
+Ans 4 String constant pool is the dedicated space in heap memory to store String that are written with String literls. it create string object in heap area. the specification of scp is it can not make dublicate content 
+Of any string variable for example if String s1= "sachin";
+                                      String s2 ="sachin"' then in scp will store s1 with sachin and s2 with existing content "sachin".
+                                      this is useful for memory and java developers.
+                                      
+Ans 5 Mutable is changeable string and immutable is non changeable string mutable string object is created by string literal and immutable string object are created with new keyword like String s1 = new string("hello");
+
+Ans 6 String constant pool is inside heap area of memory and jvm also take some part of heap area. in java string is a special . like when we use string literals then it will save in string constant pool and it is immutable
+And when we use new keyword in string then it will store in heap memory area.
+
+
+
+
+Ans 1 Mutable string in java is changeable string in java while immutable string is non changeable string in java mutable string is use stringbuffer and stringbuilder keyword to create string object. 
+Stringbuffer sb = new Stringbuffer("hello");
+append.sb("world");'
+System.out.println(sb);
+
+Ans 2 we can use reverse inbuild method to change the string to reverse 
+public class Rev{
+public static void main(String [] args){
+String orignal = "world hello";
+String reverse = new StringBuilder(orignal).reverse();
+System.out.println("reversed string is " + reverse);
+}
+}
+
+
+Ans 3 public class ReverseSentence {
+    public static void main(String[] args) {
+        String originalSentence = "hello world hm"; //orignal words
+        String[] words = originalSentence.split(" "); //word array split the words from sentances one by one 'hello' 'world' 'hm'
+        StringBuilder reversedSentence = new StringBuilder(); //creating mutable reversentance object
+
+        for (int i = 0; i < words.length; i++) { //  word array loop
+            String word = words[i]; //store in word one by one 'w','o','r','l','d' 
+            StringBuilder reversedWord = new StringBuilder(word).reverse(); // reverse() words 'd', 'l', 'r', 'o', 'w'
+            reversedSentence.append(reversedWord);
+
+            if (i < words.length - 1) {
+                reversedSentence.append(" ");
+            }
+        }
+
+        System.out.println(reversedSentence.toString());
+    }
+}
+
+Ans 4 public class Demo {
+    public static void sorting(String str) {
+        char arr[] = str.toCharArray(); // Convert the input string to a character array
+        Arrays.sort(arr); // Sort the character array in ascending order
+        System.out.print(arr); // Print the sorted character array
+    }
+
+    public static void main(String[] args) {
+        String s1 = "atejdfjlfbfcgd"; // The input string to be sorted
+        sorting(s1); // Call the sorting function with the input string
+    }
+}
+
+
+
+
+
+    
+    
