@@ -72,5 +72,63 @@ Ans 4 public class Demo {
 
 
 
-    
+
+
+Ans 1 To print string entered by user 
+import java.util.Scanner;
+public class prinntt{
+public static void main(String []args){
+Scanner s = new Scanner(System.in);
+String a = s.next();
+Sout(a);
+}
+}
+
+Ans 2 we can concatenate string with + oprator in java
+String s1 = "hello";
+String s2 = "world";
+String result = s1 + s2;
+
+Ans 3 we use length() function to find length of string
+String s1 = "hello"
+Sout(s1.length());
+
+Ans 4 By equals() function we compare string content.
+String s1 = "hello";
+String s2 = "hello";
+if(s1.equals(s2)){
+Sout("string is equals ");
+else Sout("string is not equals");
+}
+
+Ans 5 class Ans{
+public static void main(String[] args){
+String a = "refrigerator";
+System.out.println(a.length());
+}
+}
+
+Ans 6 to find i in string we use CharAt() function in java
+String s1 = "hello";
+boolean here = false;
+for(int i = 0; i<s1.length(); i++){
+if(s1.CharAt(i) == 'e'){
+here = true;
+break;
+}
+}
+Sout ("true");
+
+
+
+Ans 7
+public class RemoveConsonants {
+    public static void main(String[] args) {
+        String sentence = "hello, have a good day";
+        String result = sentence.replaceAll("[^aeiouAEIOU]", "");
+        System.out.println(result);
+    }
+}
+
+
     
