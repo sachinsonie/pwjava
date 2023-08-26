@@ -132,3 +132,95 @@ public class RemoveConsonants {
 
 
     
+
+
+
+Ans 1
+public class ReverseString {
+    public static void main(String [] args) {
+        String orignal = "hello bay";
+        String result = "";
+        for(int i = orignal.length()-1; i>=0; i--) {
+            char onebyone = orignal.charAt(i);
+            result = result + onebyone;
+        }
+        System.out.println(result);
+    }
+}
+
+Ans 2
+import java.util.*;
+
+class Palindrome {
+	public static void main(String args[]) {
+		String original, reverse = ""; 
+		Scanner in = new Scanner(System.in);
+		System.out.println("Enter a string to check if it is a palindrome");
+		original = in.nextLine();
+		int length = original.length();
+		for (int i = length - 1; i >= 0; i--)
+			reverse = reverse + original.charAt(i);
+		if (original.equals(reverse))
+			System.out.println("Entered string is a palindrome.");
+		else
+			System.out.println("Entered string isn't a palindrome.");
+	}
+}
+
+Ans 3 public class UpperToLowerCase {
+	public static void main(String[] args) {
+		String S1 = "ineuron";
+		String S2 = "";
+		for (int i = 0; i < S1.length(); i++) {
+			if ((S1.charAt(i) >= 'a') && (S1.charAt(i) <= 'z')) {
+				S2 = S2 + (char) (S1.charAt(i) - 32);
+
+			} else if ((S1.charAt(i) >= 'A') && (S1.charAt(i) <= 'Z')) {
+				S2 = S2 + (char) (S1.charAt(i) + 32);
+
+			}
+
+		}
+		System.out.println(S2);
+	}
+
+}
+
+Ans 4
+public class CharRemover {
+    public static void main(String[] args) {
+        String input = "Hello, World!";
+        char charToRemove = 'o';
+        String result = removeChar(input, charToRemove);
+        System.out.println(result);
+    }
+    
+    public static String removeChar(String input, char charToRemove) {
+        StringBuilder result = new StringBuilder();
+        
+        for (char c : input.toCharArray()) {
+            if (c != charToRemove) {
+                result.append(c);
+            }
+        }
+        
+        return result.toString();
+    }
+}
+
+
+Ans 5 
+import java.util.*;
+ class substringINdex{
+ public static void main(String [] args){
+ String mainString = "hello how are you";
+ int index = mainString.indexOf("are");
+ if(index == -1){
+ System.out.println("not found");
+ }
+ else{ 
+ System.out.println("find at " + index);
+ }
+ }
+ }
+ 
