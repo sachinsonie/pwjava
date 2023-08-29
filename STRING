@@ -1,0 +1,384 @@
+                                                                                                CONSTRUCTOR
+Ans 1 Constructor is used to initialized the object state and it is also used to execute some statement at time of object creation.
+
+Ans 2 Constructor chaining is the technique to call another constructor from one constructor. this() is used to call same class constructor and super() is used to call parent class constructor
+
+Ans 3 No we can not call subclass constructor from super class constructor.
+
+Ans 4 Normally constructor must not have return type by defination but if constructor have return type it will consider as method name but compiler gives warning that method has a constructor name.
+class demo{
+        int demo(){
+        ---------------
+        ---------------
+        return 0; // method has constructor name
+  }
+}
+
+Ans 5 No argument constructor is known as no argument constructor, the default constructor is always no argument constructor.
+class demo{
+      public demo(){
+      -------------//no argument constructor
+  }
+}
+
+Ans 6 If a class contains no constructor declarations, then a default constructor with no formal parameters and no throws clause is implicitly declared. If the class being declared is the primordial class Object,
+then the default constructor has an empty body. Otherwise, the default constructor simply invokes the superclass.
+
+Ans 7 Constructor overloading means sometime we use constructor to do diffrent task. when we have same name constructor with no parameter and different parameter is called constructor overloding
+demo()
+demo(int a, int b)
+demo(int a, String sh)
+
+Ans 8 Default constructor
+  For every java class constructor is applicable.
+  If we don't write constructor in java it will autometic created by compiler.
+  When we write constructor in java programming then compiler will not genrate default constructor
+
+Protype of constructor
+There is always no arguments.
+The access modifie of default constructor is same as class access modifier
+Default constructor contains one line super().
+
+
+
+
+                                                                          ENCAPSULATION
+Ans 1 The encapsulation in java is the process of binding data and methods together in a single unit. if a field in a class asign as private then it will not accessable by another class it will hide in that class 
+so encapsulation is called data hiding.
+
+Ans 2 Features of encapsulation
+Data hiding : encapsulation hides the internal data and methods from outside world and outside class. and it will access able from only same class and it can accessable by another class with object.
+Abstraction : It allow to focus on feature while hiding the implemetation it is very useful and friendly while interacting the object only.
+Access control : encapsulation gives the feature of control the access of data and methods with public, private and protected specifier.
+Data integrity : Encapsulation ensures that the data stored within an object is consistent and valid. This is achieved by enforcing constraints on the data through methods, which prevents the data from 
+being modified in an inconsistent or incorrect manner.
+Modularity: Encapsulation allows us to create modular code, which makes it easier to manage and maintain complex systems. By encapsulating related data and methods within a single class, 
+we can create a self-contained unit that can be reused and extended in different parts of the code.
+
+Ans 3 Gette and setter in java is used to access and modify the private members of the class. it provide layer of abstraction that allow control of access the data as needed.
+public class student{
+  private String name;
+  private int age;
+
+public String getName(){
+return name;
+}
+public void setName(String name){
+this.name = name;
+}
+public int getAge(){
+return age;
+}
+public void setAge(int age){
+if(age >= 1 && age<120){
+this.age = age;
+}else{
+System.out.println("no valid age");
+}
+}
+}
+
+Ans 4 This is refer to current object or instance of class. it is used to differentiate the instance and local varaible of class that have same name.
+public class person{
+  private String name;
+  private int age;
+  public person(String nmae, int age){
+    this.name = name;
+    this.age = age;
+  }
+  public void printdetails(){
+      System.out.println("name" + this.name);
+      System.out.println("age" + this.age);
+}
+public void changeName(String name){
+    this.name = name;
+}
+pulic void changeAge(int age){
+this.age = age;
+}
+}
+
+Ans 5 Encapsulation advantage 
+The encapsulated code is more flexible and easy to change with new requirements.
+It prevents the other classes from accessing the private fields.
+Encapsulation allows modifying implemented code without breaking other code who have implemented the code.
+It keeps the data and codes safe from external inheritance. Thus, Encapsulation helps to achieve security.
+It improves the maintainability of the application.
+
+Ans 6 Encapsulation is achieved in Java by declaring the instance variables of a
+
+class as private,
+
+and providing public getter and setter methods to access and
+
+modify the values of these
+
+variables. This allows us to control access to the
+
+data and ensure that it can only be modified
+
+through the methods of the class,
+
+rather than directly accessing the instance variables from
+
+outside the class.
+Here's an example to illustrate how encapsulation can be achieved in Java:
+public class BankAccount {
+private String accountNumber;
+private double balance;
+public BankAccount(String accountNumber, double balance) {
+this.accountNumber = accountNumber;
+this.balance = balance;
+}
+public String getAccountNumber() {
+return accountNumber;
+}
+public void setAccountNumber(String accountNumber) {
+this.accountNumber = accountNumber;
+}
+public double getBalance() {
+return balance;
+}
+public void deposit(double amount) {
+balance += amount;
+}
+public void withdraw(double amount) {
+if (amount <= balance) {
+balance -= amount;
+} else {
+System.out.println("Insufficient funds");
+}
+}
+}
+In this example, we have a class called BankAccount with two private instance variables: accountNumber and balance. 
+We also have a constructor that takes two parameters and initializes these variables.
+We provide public getter and setter methods for accountNumber and balance, which allow us to get and set the values of these variables from outside the class. 
+This allows us to control access to the data and ensure that it can only be set in proper space.modified through these methods.
+
+
+
+
+                          PRACTICAL
+Ans 1: public class StaticAssignment{
+  private static int instanceCount = 0;
+public StaticAssignment(){
+    instanceCount++;
+}
+public static int getInstanceCount(){
+return instanceCount;
+}
+public static void main(String []args){
+StaticAssignment c1 = new StaticAssignment();
+StaticAssignment c2 = new StaticAssignment();
+StaticAssignment c3 = new StaticAssignment();
+StaticAssignment c4 = new StaticAssignment();
+System.out.println("number of instance created: " + StaticAssignment.getInstanceCount();
+}
+}
+}
+
+Ans 2 public class student{
+private String name;
+private int age;
+public student(String studentName, int studentAge){ //constructor to initialized name and age.
+name = studentName;
+age = studentAge;
+}
+public String getName(){
+return name;
+}
+public int getAge(){
+return age;
+}
+public static void main(String []args){
+student stu = new student("soni" 21);//object created with parameter
+sout(" s name " = stu.getName());
+sout(" s age " = stu.getAge());
+}
+}
+
+Ans 3 public class Encapsulation{
+      private String name;
+      private int age;
+// construcor with parameter initialization
+public Encapsulation(String name, int age){
+      this.name = name;
+      this.age = age;
+}
+public String getName(){
+return name;
+}
+public int age(){
+return age;
+}
+}
+class main{
+        public static void main(String[] args){
+        Encapsulation p = new Encapsulation("soni" 21);
+sout("name" + p.get.Name); 
+sout("age" + p.get.age); 
+}
+}
+
+Ans 4 
+public class staticmethod{
+punlic static void run(){
+sout("static method");
+}
+public static void main(String [] args){
+StaticMethod.run();//we can call static method with class name without creating object
+}
+}
+
+Ans 5
+public class Car {
+    private String brand;
+    private String model;
+    private int year;
+
+    static {
+        System.out.println("Inside the static block: Initializing static values");
+    }
+
+    // Default constructor
+    public Car() {
+        brand = "Unknown";
+        model = "Unknown";
+        year = 0;
+    }
+
+    // Constructor with parameters
+    public Car(String carBrand, String carModel, int carYear) {
+        brand = carBrand;
+        model = carModel;
+        year = carYear;
+    }
+
+    // Getter methods
+    public String getBrand() {
+        return brand;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public static void main(String[] args) {
+        // Creating objects using different constructors
+        Car car1 = new Car();
+        Car car2 = new Car("Toyota", "Camry", 2022);
+
+        // Printing car information using getter methods
+        System.out.println("Car 1 - Brand: " + car1.getBrand() + ", Model: " + car1.getModel() + ", Year: " + car1.getYear());
+        System.out.println("Car 2 - Brand: " + car2.getBrand() + ", Model: " + car2.getModel() + ", Year: " + car2.getYear());
+    }
+}
+
+
+                                  static keyword
+Ans 1
+The static keyword in Java is used to indicate that a member belongs to a class rather than an instance of a class. This means that the member can be accessed without having to create an instance of the class.
+To create class-level variables that are shared by all instances of a class.
+To create class-level methods that can be called without creating an instance of a class.
+To create a block of code that is executed when a class is loaded.
+In general, static is used to create class-level members that are independent of any specific instance of a class and can be accessed without creating an instance of the class.
+
+In Java, static is a keyword that is used for memory management mainly. Static means single-copy storage for variables or methods. The members that are marked with the static keyword inside a class are called static members.
+
+Ans 2
+**Class Loading**
+In Java, class loading is the process of loading class files into the Java Virtual Machine (JVM) at runtime. It is responsible for loading classes from various sources, such as the filesystem, network, and database, and making them available to the JVM for execution. The class loading process in Java is divided into three phases: loading, linking, and initialization.
+**Loading**:
+In the loading phase, the class loader locates the class file using the fully qualified class name, reads the class file, and converts it into a Class object. The Class object contains the metadata of the class, such as the fields, methods, and constructors.
+**Linking**:
+In the linking phase, the JVM performs several operations on the Class object, such as verifying the class file's integrity, resolving symbolic references, and allocating memory for the class variables.
+**Initialization**:
+In the initialization phase, the JVM initializes the class variables with their default values and runs the class's static initialization block (if any).
+
+Ans 3 No
+
+Ans 4 Ans¦ A tatic method i alo called a cla method becaue it tie to a£cla rather than an individual
+intance of a cla. Therefore, we need not to create an object of the cla to call and execute a
+static method.
+
+Ans 5 Ans¦ When the dot cla file i loaded into memory, a tatic block i£executed. After executing the
+tatic block, JVM call the main method to£tart execution. Therefore, the tatic block i executed
+before the main£method.
+
+Ans 6 The static keyword in Java is used to indicate that a member
+
+belongs to a class rather than an
+
+instance of a class. This means that the
+
+member can be accessed without having to create an
+
+instance of the class.
+Here is an example that demonstrates the use of the static keyword in
+Java:
+
+public class Counter {
+private static int count = 0;
+public Counter() {
+count++;
+}
+public static int getCount() {
+return count;
+}
+}
+In this example, the count variable is declared as static, which means it is
+
+a class-level variable that
+
+is shared by all instances of the Counter class.
+
+The getCount method is also declared as static,
+
+which means it can be
+
+called without creating an instance of the Counter class.
+
+Ans 7 A static variable is also called a class variable whereas an instance
+
+variable is also called a non
+
+static variable.¤
+« Class variables can be accessed inside a static block, instance block,
+
+static method, instance
+
+method, and method of the inner class whereas,
+
+instance variable can be accessed only inside
+
+the instance members, and
+
+method of the inner class.¤
+« Class variable is always resolved during compile time whereas,
+
+instance variable is resolved
+
+during the runtime.¤
+« Static variables cannot be serialized in Java whereas instance variables
+
+can be serialized.
+
+Ans 8 statico
+« These variables are called “class variables”.¤
+« These variables will get memory in the method area.¤
+« If the value does not change from object to object then we need to use
+
+static variables.¤
+
+« Inside a static area we can access static variables only.¤
+« Static variables are created using static keywords.
+Non-statico
+« These variables are called “instance variables”.¤
+« These variables will get memory in the heap area.¤
+« If the value changes from object to object then we need to use
+
+“non-static” variables.
