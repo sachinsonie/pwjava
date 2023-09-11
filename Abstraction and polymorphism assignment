@@ -1,0 +1,79 @@
+Ans 1 inheritance is the process where a child class acquires the functionality of parent class.
+
+Ans 2 A class where the subclass inherits the features that class is called superclass
+A class that inherit all the member and function from another class is called subclass
+
+Ans 3 inheritance can be implements using two keywords
+extends : is a keyword that is used for developing the inheritance between a two class and two interface
+Implements : keyword is used for developing the inheritance between a class and interface
+
+Ans 4 polymorphism is a  ability to take several forms it is a ability to take object in different forms
+
+Ans 5 difference between overriding and overloading
+Compile time polymorphism in overloading 
+Run time polymorphism in overriding 
+Method call determine at compile time in overloading 
+Method call determine at run time in overriding
+Occurs between method in same class:overloading
+Occurs between subclass and super class : overriding
+
+Have same name but different parameters 
+Have same signature 
+
+On error effect visible at compile time in overloading 
+On error effect visible at run time in overriding
+
+Ans 6 Abstraction : it basically deals with hiding the internal details and showing the essential things to the user.
+Abstract class sports{
+Abstract void jumps();
+}
+
+Ans 7 Abstract method is incomplete method while final method is complete method 
+Abstract method can use by overriding but we can not use final method with overriding
+
+Ans 8 A class declared with final keyword is known as final class. A final class cann’t be inherited by any class. We can create final class when it nature is completed
+Final class ParentClass{
+Void showData(){
+System.out.println(“this is method of final parent class”);
+}
+}
+Class childClass extends ParentClass {
+Sout (“this is child class”);
+}}
+Class mainclass {
+Public static void main(String []args){
+ParentClass s = new childClass();
+s.showData();
+}
+}
+
+Ans 9 Abstraction and encapsulation difference
+Abstraction hide details but show essential information.
+It solves issue at the design level
+It focuses on external lookout
+It can be implemented using abstract classes and interfaces it is the process of gaining information
+
+
+Encapsulation is also a feature of oops it hides the code and data into a single entity 
+
+Encapsulation solves an issue at implementation level
+
+It focus an internal working
+
+It can be implemented by using access modifier 
+
+It is a process of containing the information 
+
+
+Ans 10 Compile time and run time polymorphism
+Compile time polymorphism is less flexible as all things execute at compile time
+The call is resolved by the compiler
+Inheritance is not involved 
+It provide fast execution
+Method overloading is the compile time polymorphism where more method have same name but different parameters 
+
+Runtime polymorphism is more flexible as all things execute at run time 
+The call is not resolved by compiler 
+It is also know as dynamic binding
+It provide slow execution
+Method overriding is the runtime polymorphism have the same method with same parameters and signature.
