@@ -20,3 +20,71 @@ Abstract class can extended using 'extends' keyword         | interface can be i
 eg - public abstract class shape{                           | eg - public interface DrawAble{
      public abstract void draw();                           |      void draw();
 }                                                           |      }
+
+
+
+                                                                  LAMBDA EXPRESSION ASSIGNMENT
+  Ans 1 lambda expression allows to write more succinct code in java 8 
+        (a,b) -> a + b is a lambda expression (look for that arrow -> )
+        //this is equal to this code
+public int value(int a, int b)
+{
+return a + b;
+}
+it is also called anonymous function because it is a without name function
+
+Ans 2 yes we can pass a lambda expression to a method provided it is expecting a functional interface. for example if a method is accepting a Runnable, comparable or comparator then you can pass a lambda 
+expression to it 
+
+Ans 3 functional interface in java 8 is an interface with single abstract methods for example a abstract class have one abstract method like compare() or run() etc 
+
+Ans 4 Merits of lambda expression 
+The main benifits is to pass a code block to method easily
+example (a,b) -> a + b 
+this is binding the code inside an anonymous class which requires a lot of boilerplate code.
+
+Ans 5 No we can write in lambda expression without paremeters 
+() -> System.out.println("lambda expression without parameters");
+we can pass this code to any method which acceps a functionnal interface or single abstract method
+
+
+                                                                    EXCEPTION HANDLING ASSIGNMENT
+Ans 1 Error in java 
+syntax error - the mistake done by programmer with respect to syntax, these mistakes are identified by the compiler  
+logical error - mistake done by programmer in ternms of writing logic,these mistake are identified by jvm during the execution of a program.
+
+Ans 2 Exception in java
+An expected event that disturb the flow of execution of a program. main objective of it is handle the exception.
+
+Ans 3 Exception handling is done with 
+try - all the code that monitoring for an exception or expected code for exception
+catch - this block catch all the exception that ware trapped in the try block
+finally - this block always performed irrespective of the catching of exceptionin the try and catch block
+
+class Launch
+  {
+      public static void main(String []args)
+      {
+          try
+            {
+              System.out.println("hello" + " " + 1 /0);
+            }
+            catch(ArithmeticException e)
+                {
+              System.out.println("world");
+              }
+      }
+ }
+
+Ans 4 why exception handling in java if there is no try and catch block while an exception occurs the program will terminate. it is ensures the smooth running of a program without program termination.
+
+Ans 5 Exception and error difference
+Error are typically happen while an application is running eg out of memory error in cas the JVM runs out of memory.
+Exeption are mainly caused by the application for instance null pointer exception happens when an app tries get through a null object.
+
+Ans 6 Exception types
+Checked - occur during the compilation and handle during compilation
+Unchecked - occure during program execution. thease are not detectable
+
+Ans 7 no we need catch or finally block with try block . we can remove catch or finally block but not both
+
