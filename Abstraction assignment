@@ -1,0 +1,22 @@
+                                                                  INTERFACE ASSIGNMENT
+Ams 1 An interface in java is a machanism that is used to achieve complete abstraction .it is basically a kind of class that contains only constants and abstract methods
+
+Ans 2 Only abstract and public modifier are allowed in interface 
+
+Ans 3 Use of interface
+An inteface is used to achieve full abstraction
+An interface is best way to expose project API to other project
+An interface is used to customise features of sofrware differently for different objects
+An interface helps in achieve the functionality of multiple inheritance.
+
+Ans 4 Difference in abstraction and interface
+Abstract class can have abstract and non abstract methods   | interface can have only abstract methods since java 8 it can have default and static methods also
+Abstract class dosen't support multiple inheritance         | interface support multiple inheritance
+Abstract can have final, non final and static and non static| interface has only static and final variables
+variables                                                   |  
+Abstraction class can provide implementation of interface   | interface can't  provide implementation of abstract class
+The abstract keyword is used to declare abstract class      | interface keyword is used to declare the interface
+Abstract class can extended using 'extends' keyword         | interface can be implement using 'implements' keyword
+eg - public abstract class shape{                           | eg - public interface DrawAble{
+     public abstract void draw();                           |      void draw();
+}                                                           |      }
